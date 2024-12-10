@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+    <meta name="description" content="Discover authentic flavors and warm hospitality at Bistro Gheorgheni. Enjoy traditional dishes, seasonal ingredients, and a cozy ambiance in the heart of the city.">
+    <title>Bistro Gheorgheni</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            color: #333;
+            background: #fefefe;
+        }
+        header {
+            background: #3c3a2e;
+            color: #fefefe;
+            padding: 1.5em;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            background: #f4f4f4;
+            padding: 0.5em 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #3c3a2e;
+        }
+        .hero {
+            position: relative;
+            height: 60vh;
+            background: url('https://via.placeholder.com/1400x800?text=Bistro+Gheorgheni') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            background: rgba(60, 58, 46, 0.75);
+            padding: 2em;
+            text-align: center;
+            color: #fefefe;
+            max-width: 500px;
+        }
+        .hero-content h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .hero-content p {
+            margin-top: 1em;
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+        .hero-content a.button {
+            display: inline-block;
+            margin-top: 1.5em;
+            background: #f2e7da;
+            color: #3c3a2e;
+            padding: 0.75em 1.5em;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .hero-content a.button:hover {
+            background: #d9c7b0;
+        }
+        .about-section, .menu-section, .contact-section {
+            padding: 3em 1em;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .about-section h3, .menu-section h3, .contact-section h3 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: #3c3a2e;
+        }
+        .about-section p {
+            line-height: 1.6em;
+            font-size: 1.1em;
+            margin: 1em 0;
+            text-align: center;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .menu-item {
+            background: #fefefe;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1em;
+            text-align: center;
+        }
+        .menu-item h4 {
+            margin: 0;
+            font-size: 1.3em;
+            color: #3c3a2e;
+        }
+        .menu-item p {
+            margin: 0.5em 0;
+            font-size: 1em;
+        }
+        .contact-section form {
+            max-width: 400px;
+            margin: 2em auto 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-section label {
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        .contact-section input, .contact-section textarea {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 0.75em;
+            margin-bottom: 1em;
+            font-size: 1em;
+        }
+        .contact-section button {
+            background: #3c3a2e;
+            color: #fefefe;
+            padding: 0.75em;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .contact-section button:hover {
+            background: #2d2b21;
+        }
+        footer {
+            background: #3c3a2e;
+            color: #fefefe;
+            text-align: center;
+            padding: 1em;
+            margin-top: 3em;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .hero {
+                height: 40vh;
+            }
+            .hero-content h2 {
+                font-size: 1.5em;
+            }
+            .about-section p {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bistro Gheorgheni</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>A Taste of Tradition, A Moment of Bliss</h2>
+            <p>Experience authentic culinary artistry crafted from fresh, locally-sourced ingredients in the warm embrace of our cozy bistro.</p>
+            <a href="#menu" class="button">View Menu</a>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <h3>Our Story</h3>
+        <p>Bistro Gheorgheni is a family-owned restaurant, driven by a passion for the rich traditions of Transylvanian cuisine. Over the years, we have blended old-world recipes with modern techniques to create a dining experience that is both comforting and inspiring. We believe that every meal should be memorable, and every guest should feel at home.</p>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <h3>Our Menu</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h4>Transylvanian Goulash</h4>
+                <p>Hearty beef stew with paprika and fresh vegetables</p>
+                <p><strong>$14</strong></p>
+            </div>
+            <div class="menu-item">
+                <h4>Stuffed Cabbage Rolls</h4>
+                <p>Traditional rolls filled with ground pork and rice in a rich tomato sauce</p>
+                <p><strong>$12</strong></p>
+            </div>
+            <div class="menu-item">
+                <h4>Polenta with Sheep Cheese</h4>
+                <p>Creamy polenta layered with tangy sheep cheese and crispy bacon</p>
+                <p><strong>$11</strong></p>
+            </div>
+            <div class="menu-item">
+                <h4>Chimney Cake</h4>
+                <p>Sweet, freshly baked pastry rolled in sugar and walnuts</p>
+                <p><strong>$7</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h3>Contact Us</h3>
+        <p>Have a question, feedback, or want to book a private event? Send us a message below.</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Bistro Gheorgheni. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Update year in footer automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
